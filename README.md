@@ -201,12 +201,12 @@ python -m hloc.reconstruction [...] --image_options camera_model='"SIMPLE_RADIAL
 ```
 
 By default, hloc refines the camera parameters during the reconstruction process. To prevent this, add:
-```python
+python
 reconstruction.main(..., mapper_options=dict(ba_refine_focal_length=False, ba_refine_extra_params=False))
-```
-```bash
+
+
 python -m hloc.reconstruction [...] --mapper_options ba_refine_focal_length=False ba_refine_extra_params=False
-```
+
 
 </details>
 
